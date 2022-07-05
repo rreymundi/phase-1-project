@@ -42,6 +42,6 @@ The *saveButton()* and *deleteButton()* functions each have an event listener fo
 
 **App demo**
 
-You can find a video demo of the app [here](https://drive.google.com/file/d/1jbVr_hFHoyetEN2QzJWM_tKtfwl71ZaR/view?usp=sharing)
+You can find a video demo of the app [here](https://drive.google.com/file/d/1jbVr_hFHoyetEN2QzJWM_tKtfwl71ZaR/view?usp=sharing).
 
 **Thanks for reading!**
