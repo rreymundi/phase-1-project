@@ -17,42 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let deletedShow
     let myDeletedShow
 
-    // function to toggle "dark mode"
-    function darkMode(){
-        // EVENT LISTENER 1 this loads the 'light' theme if there is no theme selected
-        window.addEventListener('load', () => {
-            if (!localStorage.getItem('theme')) {
-                localStorage.setItem('theme', 'light');
-            }
-        // this sets the button emoji based on the theme
-            const themeSelector = document.querySelector('#themeSelector');
-            if (localStorage.getItem('theme') === 'dark') {
-                document.body.classList.add('dark');
-                themeSelector.textContent = '☀️';
-            } else {
-                themeSelector.textContent = '🌙️';
-            }
-        // EVENT LISTENER 2 this is the actual funcitonality where a CLICK event listener changes the theme of the page
-            themeSelector.addEventListener('click', () => {
-                if (localStorage.getItem('theme') === 'light') {
-                    localStorage.setItem('theme', 'dark');
-                    themeSelector.textContent = '☀️';
-                } else {
-                    localStorage.setItem('theme', 'light');
-                    themeSelector.textContent = '🌙️';
-                }
-        
-                document.body.classList.toggle('dark');
-            });
-        });
-    }
-
-    // EVENT LISTENER 3 function with event listener for form `submit`
+    // EVENT LISTENER 1 function with event listener for form `submit`
     function formSubmit(){
         form.addEventListener('submit', (e) => {
             e.preventDefault()
             searchQuery = e.target[0].value
-    
             // my GET request
             fetch(`${url}?q=${searchQuery}`)
             .then(res => res.json())
@@ -100,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         }
         
-    // EVENT LISTENER 4 my function for the SAVE button
+    // EVENT LISTENER 2 my function for the SAVE button
     function saveButton(){
         saveBtnArray = document.querySelectorAll(".save")
         // iteration #3 foreach
@@ -116,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         }
 
-    // EVENT LISTENER 5 my function for the DELETE button
+    // EVENT LISTENER 3 my function for the DELETE button
     function deleteButton(){
         // iteration #4 foreach
         deleteButtonArray.forEach(element => {
@@ -130,6 +99,36 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    darkMode()
+    // function to toggle "dark mode"
+    function themeSelector(){
+        // EVENT LISTENER 4 this loads the 'light' theme if there is no theme selected
+        window.addEventListener('load', () => {
+            if (!localStorage.getItem('theme')) {
+                localStorage.setItem('theme', 'light');
+            }
+        // this sets the button emoji based on the theme
+            const themeSelector = document.querySelector('#themeSelector');
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark');
+                themeSelector.textContent = '☀️';
+            } else {
+                themeSelector.textContent = '🌙️';
+            }
+        // EVENT LISTENER 5 this is the actual funcitonality where a CLICK event listener changes the theme of the page
+            themeSelector.addEventListener('click', () => {
+                if (localStorage.getItem('theme') === 'light') {
+                    localStorage.setItem('theme', 'dark');
+                    themeSelector.textContent = '☀️';
+                } else {
+                    localStorage.setItem('theme', 'light');
+                    themeSelector.textContent = '🌙️';
+                }
+        
+                document.body.classList.toggle('dark');
+            });
+        });
+    }
+
+    themeSelector()
     formSubmit()
 })

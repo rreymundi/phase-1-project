@@ -56,6 +56,10 @@ body, css {
     text-align: center;
   }
 
+  #search {
+    height: 25px;
+  }
+
   #search-results-list {
     flex-wrap: wrap;
     display: flex;
@@ -143,6 +147,7 @@ button:hover {
   background-color: whitesmoke;
   color: #A2C47E;
   transition-duration: 400ms;
+  cursor: pointer;
 }
 
 .save, .delete {
