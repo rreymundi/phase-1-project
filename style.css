@@ -1,0 +1,193 @@
+body, css {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    text-align: center;
+    /* min-height: 100vh; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  body * {
+    margin: 1em;
+    padding: 0;
+    list-style: none;
+  }
+  
+  section {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+
+  li {
+    width: max-content;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* position: absolute; */
+    bottom: 0;
+  }
+  
+  footer button {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  #title-header {
+    display: block;
+    background-color: #A2C47E;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-right: 49px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    height: 150px;
+  }
+
+  /* .dark #search {
+    background-color: #A2C47E;
+  } */
+
+  /* .dark ::placeholder{
+    color: #1a1d24;
+  } */
+
+  .dark button {
+    color: #1a1d24;
+  }
+
+  #search-results-list {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  #my-watch-listt {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+   
+  #search-results {
+      display: none;
+      justify-content: center; 
+      /* margin: 0 auto; */
+      margin:2rem;
+      text-align: center;
+  }
+
+  #my-list {
+    display: block; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+  font-size: 54pt;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  display: inline-block;
+  text-align: center;
+}
+
+h6 {
+  display: inline-block;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  border: #A2C47E solid 1px;
+  padding: 1rem;
+  width: 15rem;
+  height: 25rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px #4A8A71;
+  justify-content: center;
+  transition: all 600ms cubic-bezier(0.175, 0.885, 0.335, 1);
+  transition-property: all;
+  transition-duration: 600ms;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.335, 1);
+  transition-delay: 0s;
+}
+
+.card:hover {
+  transform: translateX(-4px) translateY(-4px);
+  }
+
+#poster {
+  position: relative;
+  justify-self: center;
+  height: 12rem;
+  width: auto;
+}
+
+button {
+  position: relative;
+  background-color: #A2C47E;
+  border: #A2C47E solid 1px;
+  border-radius: 5px;
+  height: 2rem;
+  width: 4rem;
+  /* width: max-content; */
+  color: whitesmoke;
+  /* font-size: 18px; */
+  justify-self: center;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  color: #A2C47E;
+  transition-duration: 400ms;
+}
+
+.save, .delete {
+  position: absolute;
+  background-color: #A2C47E;
+  border: #A2C47E solid 1px;
+  border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
+  color: whitesmoke;
+  font-size: 18px;
+  justify-self: center;
+  bottom: 48px;
+  right: 8px;
+  /* top: 32px;
+  top: 32px; */
+}
+
+.save:hover {
+  background-color: whitesmoke;
+  color: #A2C47E;
+}
+
+#header {
+  text-align: center;
+}
+
+.dark {
+  background-color: #1a1d24; 
+  color: whitesmoke;
+}
+
+.dark h1 {
+  color: #1a1d24;
+}
