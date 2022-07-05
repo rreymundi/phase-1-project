@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function filterResults(array, string){
         searchResultsList.innerHTML = ''
         searchResults.style.display = 'block'
-        // filters results into new array
+        // iteration #1 filter
             results = array.filter(element => {
                 element.name === string
                 return element
@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // my function to RENDER results
     function renderResults(array){
+        // iteration #2 foreach
         array.forEach(element => {
             card = document.createElement('li')
             const showURL = element.show.url
@@ -102,6 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // EVENT LISTENER 4 my function for the SAVE button
     function saveButton(){
         saveBtnArray = document.querySelectorAll(".save")
+        // iteration #3 foreach
         saveBtnArray.forEach(element => {
             element.addEventListener('click', () => {
                 savedShow = element.parentNode
@@ -116,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // EVENT LISTENER 5 my function for the DELETE button
     function deleteButton(){
+        // iteration #4 foreach
         deleteButtonArray.forEach(element => {
             element.className = 'delete'
             element.innerHTML = '✖️'
@@ -130,5 +133,4 @@ document.addEventListener('DOMContentLoaded', () => {
     darkMode()
     formSubmit()
 })
-
-// END OF MY JS SCRIPT DO NOT ADD CODE
+// END
