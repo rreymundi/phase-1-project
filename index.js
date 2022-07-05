@@ -133,11 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // END OF MY JS SCRIPT DO NOT ADD CODE
 
-// let cardHover = document.querySelector('.card')
-//                 cardHover.addEventListener('mouseover', () => {
-//                     cardHover.style.transition.backgroundColor = "white"
-//                     })
-
 // save button function
 
 // function saveButton(){
