@@ -158,27 +158,3 @@ document.addEventListener('DOMContentLoaded', () => {
 //         })
 //     }
 // }
-
-    // // my function for the SAVE button
-    // function saveButton(){
-    //     saveBtnArray = document.querySelectorAll(".save")
-    //     saveBtnArray.forEach(element => {
-    //         element.addEventListener('click', () => {
-    //             savedShow = element.parentNode
-    //             mySavedShow = savedShow.parentNode
-    //             // mySavedShowCopy = mySavedShow.cloneNode(true)
-    //             myWatchList.appendChild(mySavedShow)
-    //             deleteButton()
-    //         })
-    //     })
-    // }
-    
-    // // // my function for the DELETE button
-    // function deleteButton(){
-    //     deleteButtonArray = document.getElementById("my-watch-list").querySelectorAll("li")
-    //     deleteButtonArray.forEach(element => {
-    //         element.addEventListener('click', () => {
-    //             myWatchList.appendChild(element)
-    //         })
-    //     })
-    // }
