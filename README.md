@@ -13,9 +13,7 @@
 
 There are way too many TV shows to keep track of these days. With so much content available at any given time, I wanted to create a simple app that allows folks to keep track of what they're watching or interested in watching.
 
-EZ TV is a single page app that allows you to search for TV shows and keep track of them by adding them to a watch list. Once you've watched a show, you can simply remove it from your list!
-
-## Getting Started
+EZ TV is a single page app that allows you to search for TV shows and keep track of them by adding them to a watch list.
 
 Type in whatever show or keyword you'd like to search for in the "Search" bar and click "Search". This will generate list of search results displayed as cards.
 
