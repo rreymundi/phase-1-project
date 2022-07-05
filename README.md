@@ -17,13 +17,11 @@ EZ TV is a single page app that allows you to search for TV shows and keep track
 
 ## Getting Started
 
-EZ TV uses the [TV Maze API](https://www.tvmaze.com/api) to access TV show data.
-
 Type in whatever show or keyword you'd like to search for in the "Search" bar and click "Search". This will generate list of search results displayed as cards.
 
 Once you've spotted a show you'd like to add to your watch list, simply click the "❤️" button. This will create a copy of the card which will be added to the "My Watch List" section of the page.
 
-To remove a show from your watch list, simply click the "❤️" button on that show's card. EZ, right?
+To remove a show from your watch list, simply click the "✖️" button on that show's card. EZ, right?
 
 ## App Functionality
 
