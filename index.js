@@ -132,24 +132,3 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 // END OF MY JS SCRIPT DO NOT ADD CODE
-
-// save button function
-
-// function saveButton(){
-//     let likebutton = document.querySelector('card').querySelector('button')
-//     if (likebutton.className == 'save'){
-//         likebutton.addEventListener('click', () => {
-//             savedShow = element.parentNode
-//             mySavedShow = savedShow.parentNode
-//             myWatchList.appendChild(mySavedShow)
-//             deleteButtonArray = document.getElementById("my-watch-list").querySelectorAll(".save")
-//             deleteButtonArray.className = 'delete'
-//         })
-//     } else if (likebutton.className == 'delete'){
-//         likebutton.addEventListener('click', () => {
-//             deletedShow = element.parentNode
-//             myDeletedShow = deletedShow.parentNode
-//             mmyWatchList.appendChild(myDeletedShow)
-//         })
-//     }
-// }
