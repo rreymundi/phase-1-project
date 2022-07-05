@@ -28,7 +28,6 @@ body, css {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    /* position: absolute; */
     bottom: 0;
   }
   
@@ -53,8 +52,8 @@ body, css {
     height: 150px;
   }
 
-  .dark button {
-    color: #1a1d24;
+  #header {
+    text-align: center;
   }
 
   #search-results-list {
@@ -72,7 +71,6 @@ body, css {
   #search-results {
       display: none;
       justify-content: center; 
-      /* margin: 0 auto; */
       margin:2rem;
       text-align: center;
   }
@@ -166,15 +164,16 @@ button:hover {
   color: #A2C47E;
 }
 
-#header {
-  text-align: center;
-}
-
+/* dark mode style changes */
 .dark {
   background-color: #1a1d24; 
   color: whitesmoke;
 }
 
 .dark h1 {
+  color: #1a1d24;
+}
+
+.dark button {
   color: #1a1d24;
 }
