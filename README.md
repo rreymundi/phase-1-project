@@ -40,4 +40,8 @@ The *formSubmit()* function has an event listener for "submit" which allows for 
 
 The *saveButton()* and *deleteButton()* functions each have an event listener for "click", which allows to save or remove a TV show from the "My Watch List" section of the page.
 
+**App demo**
+
+You can find a video demo of the app [here](https://drive.google.com/file/d/1jbVr_hFHoyetEN2QzJWM_tKtfwl71ZaR/view?usp=sharing)
+
 **Thanks for reading!**
