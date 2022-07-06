@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const showURL = element.show.url
             const showImage = element.show.image.medium
             const showName = element.show.name
-            const showID = element.show
+            const showID = element.show.id
             card.innerHTML = `
             <div class="card">
                 <div class="poster">
@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // EVENT LISTENER 2 my function for the SAVE button
     function saveButton(){
         saveBtnArray = document.querySelectorAll(".save")
+        console.log(saveBtnArray)
         // array iteration #3 foreach
         saveBtnArray.forEach(element => {
             element.addEventListener('click', () => {
