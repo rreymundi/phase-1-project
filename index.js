@@ -66,8 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                 </div>`
                 searchResultsList.appendChild(card)
-            })
-        }
+        })
+    }
         
     // EVENT LISTENER 2 my function for the SAVE button
     function saveButton(){
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 deleteButton()
             })
         })
-        }
+    }
 
     // EVENT LISTENER 3 my function for the DELETE button
     function deleteButton(){
