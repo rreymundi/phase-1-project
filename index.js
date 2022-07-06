@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function filterResults(array, string){
         searchResultsList.innerHTML = ''
         searchResults.style.display = 'block'
-        // iteration #1 filter
+        // array iteration #1 filter
             results = array.filter(element => {
                 element.name === string
                 return element
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // my function to RENDER results
     function renderResults(array){
-        // iteration #2 foreach
+        // array iteration #2 foreach
         array.forEach(element => {
             card = document.createElement('li')
             const showURL = element.show.url
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // EVENT LISTENER 2 my function for the SAVE button
     function saveButton(){
         saveBtnArray = document.querySelectorAll(".save")
-        // iteration #3 foreach
+        // array iteration #3 foreach
         saveBtnArray.forEach(element => {
             element.addEventListener('click', () => {
                 savedShow = element.parentNode
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // EVENT LISTENER 3 my function for the DELETE button
     function deleteButton(){
-        // iteration #4 foreach
+        // array iteration #4 forEach
         deleteButtonArray.forEach(element => {
             element.className = 'delete'
             element.innerHTML = '✖️'
